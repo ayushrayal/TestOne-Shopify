@@ -6,6 +6,9 @@
   <h1>This is a Feedback Form.</h1>
   <h1>{{ section.settings.heading_text }}</h1>
   <p>{{ section.settings.paragraph_text }}</p>
+  {% if section.settings.number <= 0 %}
+    {{ section.settings.number }}
+  {% endif %}
 </div>
 
 {% schema %}
@@ -16,19 +19,19 @@
       "type": "text",
       "id": "heading_text",
       "label": "Heading",
-      "default":"Email"
+      "default": "Email"
     },
     {
       "type": "textarea",
       "id": "paragraph_text",
       "label": "Paragraph",
-      "default":"Feedback"
+      "default": "Feedback"
     },
     {
-    "type": "number",
-    "id": "number",
-    "label": "Number",
-    "default":7251848020
+      "type": "number",
+      "id": "number",
+      "label": "Number",
+      "default": 7251848020
     }
   ],
   "presets": [
