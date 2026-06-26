@@ -1,6 +1,8 @@
 <style>
   h1{
-  color:"red"}
+  color:"red",
+  padding-top:{{ section.settings.Padding_Top }}rem;
+}
 </style>
 <div class="pagewidth">
   <h1>This is a Feedback Form.</h1>
@@ -9,6 +11,7 @@
   {% if section.settings.number >= 0 %}
     {{ section.settings.number }}
   {% endif %}
+
 </div>
 
 {% schema %}
@@ -32,6 +35,16 @@
       "id": "number",
       "label": "Number",
       "default": 7251848020
+    },
+    {
+      "type": "range",
+      "label": "Padding-top",
+      "id": "Padding_Top",
+      "min": 0,
+      "max": 100,
+      "default":0,
+      "step": 1,
+      "unit": "rem"
     }
   ],
   "presets": [
