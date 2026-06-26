@@ -3,7 +3,7 @@
   color:"red"}
 </style>
 <div class="pagewidth">
-   <h1>This is a Feedback Form.</h1>
+  <h1>This is a Feedback Form.</h1>
   <h1>{{ section.settings.heading_text }}</h1>
   <p>{{ section.settings.paragraph_text }}</p>
 </div>
@@ -15,13 +15,21 @@
     {
       "type": "text",
       "id": "heading_text",
-      "label": "Heading"
+      "label": "Heading",
+      "default":"Email"
     },
     {
-    "type": "textarea",
-    "id": "paragraph_text",
-    "label": "Paragraph"
-}
+      "type": "textarea",
+      "id": "paragraph_text",
+      "label": "Paragraph",
+      "default":"Feedback"
+    },
+    {
+    "type": "number",
+    "id": "number",
+    "label": "Number",
+    "default":7251848020
+    }
   ],
   "presets": [
     {
