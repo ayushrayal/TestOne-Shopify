@@ -1,17 +1,26 @@
 <style>
-    h1{
-    color:"red"}
+  h1{
+  color:"red"}
 </style>
 <div class="pagewidth">
-    <h1>This is form page.</h1>
+  <h1>This is form page.</h1>
 </div>
 
 {% schema %}
 {
-"name": "class 1",
-"settings": [],
-"presets": [{
-"name": "class 1"}],
-"blocks": []
+  "name": "class 1",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "class 1"
+    }
+  ],
+  "blocks": []
 }
 {% endschema %}
