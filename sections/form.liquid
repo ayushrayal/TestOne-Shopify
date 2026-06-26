@@ -3,7 +3,9 @@
   color:"red"}
 </style>
 <div class="pagewidth">
+   <h1>This is a Feedback Form.</h1>
   <h1>{{ section.settings.heading_text }}</h1>
+  <p>{{ section.settings.paragraph_text }}</p>
 </div>
 
 {% schema %}
@@ -14,7 +16,12 @@
       "type": "text",
       "id": "heading_text",
       "label": "Heading"
-    }
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_text",
+    "label": "Paragraph"
+}
   ],
   "presets": [
     {
