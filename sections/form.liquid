@@ -1,7 +1,8 @@
 <style>
-  h1{
-  padding-top:{{ section.settings.Padding_Top }}rem;
-}
+    h1{
+    padding-top:{{ section.settings.Padding_Top }}rem;
+    text-align:{{ section.settings.Heading-Alignment }}
+  }
 </style>
 <div class="pagewidth">
   <h1>This is a Feedback Form.</h1>
@@ -10,7 +11,6 @@
   {% if section.settings.number >= 0 %}
     {{ section.settings.number }}
   {% endif %}
-
 </div>
 
 {% schema %}
@@ -41,9 +41,28 @@
       "id": "Padding_Top",
       "min": 0,
       "max": 100,
-      "default":0,
+      "default": 0,
       "step": 1,
       "unit": "rem"
+    },
+    {
+      "type": "select",
+      "id": "Heading-Alignment",
+      "label": "Heading-Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left Align"
+        },
+        {
+          "value": "center",
+          "label": "Center Align"
+        },
+        {
+          "value": "right",
+          "label": "Right Align"
+        }
+      ]
     }
   ],
   "presets": [
