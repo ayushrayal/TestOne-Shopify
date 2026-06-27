@@ -1,0 +1,50 @@
+<style>
+
+    .image-container-{{ section.id }}{
+    width:100vw;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-row:1fr 1fr;
+    justify-content:center;
+    gap:1rem;
+}
+    .img-{{ section.id }}{
+        object-fit:cover;
+        border-radius:10px;
+    }
+    </style>
+<div class="image-container-{{ section.id }}">
+    <a href="{{ section.block.settings.image_url }}">
+        <img class="img-{{ section.id }}" src="{{ section.block.settings.image_picker }}" width="100px";
+        height="100px";>
+    </a>
+</div>
+
+
+
+{%   schema %}
+    {
+    "name":"Item-collection",
+    "settings":[],
+    "blocks":[{
+        "name":"Item-list",
+        "type": "Item-list",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id":"image_picker",
+                "label": "Select Image"
+            },
+            {
+            "type": "url",
+            "id": "image_url",
+            "label": "Image url"
+            }
+        ]
+    }],
+    "presets":[
+        {
+        "name": "Item-collection"}
+    ]
+    }
+{% endschema %}
