@@ -26,12 +26,41 @@
         "heading_text": "a7@gmail.com",
         "paragraph_text": "Feedbackxxxxxxxxxxxx",
         "number": 7251848021,
-        "Padding_Top": 10
+        "padding_top": 0,
+        "heading_alignment": "left"
       }
+    },
+    "collection_fbEQaK": {
+      "type": "collection",
+      "blocks": {
+        "item_E3LHGW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-04-07_023902.png",
+            "title": "New Collection 2",
+            "image_link": "shopify://collections/frontpage"
+          }
+        },
+        "item_F6MAtg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "title": "New Collection",
+            "image_link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "item_E3LHGW",
+        "item_F6MAtg"
+      ],
+      "name": "Item Collection",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "form_DhCh8z"
+    "form_DhCh8z",
+    "collection_fbEQaK"
   ]
 }
