@@ -1,7 +1,7 @@
 <style>
     h1{
-    padding-top:{{ section.settings.Padding_Top }}rem;
-    text-align:{{ section.settings.Heading-Alignment }}
+    padding-top:{{ section.settings.padding_top }}rem;
+    text-align:{{ section.settings.heading-alignment }}
   }
 </style>
 <div class="pagewidth">
@@ -38,7 +38,7 @@
     {
       "type": "range",
       "label": "Padding-top",
-      "id": "Padding_Top",
+      "id": "padding_top",
       "min": 0,
       "max": 100,
       "default": 0,
@@ -46,24 +46,25 @@
       "unit": "rem"
     },
     {
-      "type": "select",
-      "id": "Heading-Alignment",
-      "label": "Heading-Alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left Align"
-        },
-        {
-          "value": "center",
-          "label": "Center Align"
-        },
-        {
-          "value": "right",
-          "label": "Right Align"
-        }
-      ]
+  "type": "select",
+  "id": "heading_alignment",
+  "label": "Heading Alignment",
+  "default": "left",
+  "options": [
+    {
+      "value": "left",
+      "label": "Left"
+    },
+    {
+      "value": "center",
+      "label": "Center"
+    },
+    {
+      "value": "right",
+      "label": "Right"
     }
+  ]
+}
   ],
   "presets": [
     {
